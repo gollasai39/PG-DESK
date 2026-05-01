@@ -1,0 +1,38 @@
+{
+  "name": "pg-desk",
+  "version": "1.0.0",
+  "description": "Complete PG Accommodation Management System",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "npm run test:server && npm run test:client",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": [
+    "pg",
+    "accommodation",
+    "booking",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "PG Desk Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/pg-desk.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
